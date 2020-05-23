@@ -3,10 +3,6 @@ from aip import AipOcr
 import time
 import passwd
 
-# APP_ID = passwd.ocr.APP_ID  # 你的app id, 此处被隐藏,放在pass wd.py文件内,请自行申请
-# API_KEY = passwd.ocr.API_KEY  # 你的api key
-# SECRET_KEY = passwd.ocr.SECRET_KEY  # 你的secret key
-
 
 APP_ID = passwd.qinke.APP_ID  # 你的app id, 此处被隐藏,放在pass wd.py文件内,请自行申请
 API_KEY = passwd.qinke.API_KEY  # 你的api key

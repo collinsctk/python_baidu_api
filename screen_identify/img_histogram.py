@@ -24,6 +24,6 @@ def compare(benchmark_img, img):
     return confidence
 
 if __name__ == '__main__':  # Compare(benchmarkimg, img)
-    compare('.\\test.jpg', '.\QYTang_SalesQQ_dete\\test-new.jpg')
+    compare('.\\test.jpg', '.\\test-new.jpg')
 
 

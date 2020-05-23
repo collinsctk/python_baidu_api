@@ -13,7 +13,7 @@ API_KEY = passwd.qinke.API_KEY  # 你的api key
 SECRET_KEY = passwd.qinke.SECRET_KEY  # 你的secret key
 
 
-# 初始化AipFace对象
+# 初始化AipOcr对象
 client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 
 # 读取图片
@@ -22,18 +22,27 @@ def get_file_content(file_path):
         return fp.read()
 
 def img_to_str(image_path):
-    """ 可选参数 """
+    # 文档称必须传入的options 字段
     options = {
-        "language_type": "CHN_ENG",
-        "detect_direction": "true",
-        "detect_language": "true",
-        "probability": "false"
+        "language_type": "CHN_ENG",  # 识别语言类型 CHN为中文,ENG为英文
+        "detect_direction": "true",  # 检测方向: true 为横向是否检测图像朝向，
+                                     # 默认不检测，即：false。朝向是指输入图像是正常方向、逆时针旋转90/180/270度。可选值包括:
+                                     # true：检测朝向；
+                                     # false：不检测朝向。
+        "detect_language": "true",   # 识别语言: true为是
+        "probability": "false"       # 是否返回识别结果中每一行的置信度
     }
     # image = get_file_content(image_path)
     # 带参数调用通用文字识别
     result = client.basicGeneral(get_file_content(image_path), options)
+    # result的字典
+    # {'log_id': 7915507311885284247,
+    #  'direction': 0,
+    #  'words_result_num': 1,
+    #  'words_result': [{'words': 'Welcome To Qytang Python'}],
+    #  'language': 0}
 
-    # 格式化输出-提取需要的部分
+    # 提取识别的文字, 可能有多行, 插入换行然后打印
     if 'words_result' in result:
         text = ('\n'.join([w['words'] for w in result['words_result']]))
         return text

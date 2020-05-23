@@ -22,7 +22,7 @@ def make_qr_code(content, save_path=None):
         img.show()  # 中间图不显示
 
 
-def make_qr_code_with_icon(content: object, icon_path: object, save_path: object = None) -> object:
+def make_qr_code_with_icon(content: object, icon_path: object, save_path: object = None):
     if not os.path.exists(icon_path):
         raise FileExistsError(icon_path)
 

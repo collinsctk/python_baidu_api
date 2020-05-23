@@ -1,23 +1,12 @@
 class sex():
-    APP_ID = '19891414'  # 你的app id
-    API_KEY = 'usNMOs7sdzwep3QOgY4xoFV2'  # 你的api key
-    SECRET_KEY = 'gw5vs1lKOLRGE6MstE8X8zbmxsXVBWIg'  # 你的secret key
+    APP_ID = '20019258'  # 你的app id
+    API_KEY = 'fVGg9Zv8quuCqsUA2h3V8L8V'  # 你的api key
+    SECRET_KEY = 'Kks20WFWPn09Q20lMrl6c81La4BwROMC'  # 你的secret key
 
-
-# """ 你的 APPID AK SK """
-# APP_ID = '17899842'
-# API_KEY = 'VM5S1ouZgwmk7Icc8x2l75pK'
-# SECRET_KEY = '9Cvxl1qB4zGuidQod9Sw6zadQHcnIQZz'
-
-class ocr():
-    """ OCR_API """
-    APP_ID = '19665830'  # 你的appid
-    API_KEY = '	Xte1anTrWDjuM5xS2P5tvOdT'  # 你的apikey
-    SECRET_KEY = 'pafwKHBkfn2xIrCIye5UK7b94eRh2AEK'  # 你的secretkey
 
 
 class qinke():
-    """ OCR_API """
+    # OCR_API
     APP_ID = '20018225'  # 你的appid
     API_KEY = 'EOQiq4xGCUjfM8Umprs2w2Bq'  # 你的apikey
     SECRET_KEY = 'fqlFtyE8GM6lj0uq6UVpuGmoSkeCfkBs'  # 你的secretkey

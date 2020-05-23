@@ -3,9 +3,15 @@ from aip import AipOcr
 import time
 import passwd
 
-APP_ID = passwd.ocr.APP_ID  # 你的app id, 此处被隐藏,放在pass wd.py文件内,请自行申请
-API_KEY = passwd.ocr.API_KEY  # 你的api key
-SECRET_KEY = passwd.ocr.SECRET_KEY  # 你的secret key
+# APP_ID = passwd.ocr.APP_ID  # 你的app id, 此处被隐藏,放在pass wd.py文件内,请自行申请
+# API_KEY = passwd.ocr.API_KEY  # 你的api key
+# SECRET_KEY = passwd.ocr.SECRET_KEY  # 你的secret key
+
+
+APP_ID = passwd.qinke.APP_ID  # 你的app id, 此处被隐藏,放在pass wd.py文件内,请自行申请
+API_KEY = passwd.qinke.API_KEY  # 你的api key
+SECRET_KEY = passwd.qinke.SECRET_KEY  # 你的secret key
+
 
 # 初始化AipFace对象
 client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
@@ -44,5 +50,5 @@ def run_ocr(path, pic_name):
     return text
     # print("OCR_DONe")
 if __name__ == '__main__':
-    run_ocr('./', '1.jpg')
+    run_ocr('./', 'test.jpg')
 

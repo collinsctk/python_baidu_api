@@ -14,3 +14,10 @@ class ocr():
     APP_ID = '19665830'  # 你的appid
     API_KEY = '	Xte1anTrWDjuM5xS2P5tvOdT'  # 你的apikey
     SECRET_KEY = 'pafwKHBkfn2xIrCIye5UK7b94eRh2AEK'  # 你的secretkey
+
+
+class qinke():
+    """ OCR_API """
+    APP_ID = '20018225'  # 你的appid
+    API_KEY = 'EOQiq4xGCUjfM8Umprs2w2Bq'  # 你的apikey
+    SECRET_KEY = 'fqlFtyE8GM6lj0uq6UVpuGmoSkeCfkBs'  # 你的secretkey

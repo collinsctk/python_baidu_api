@@ -1,6 +1,11 @@
 import time
-import win32gui, win32ui, win32con, win32api
+import win32api
+import win32gui
+import win32ui
+import win32con
 
+
+# 截图函数
 def window_capture(filename):
     hwnd = 0                                                # 窗口的编号，0号表示当前活跃窗口
     hwnd_dc = win32gui.GetWindowDC(hwnd)                    # 根据窗口句柄获取窗口的设备上下文DC（Device Context）
@@ -19,6 +24,8 @@ def window_capture(filename):
                    mfc_dc, (0, 0), win32con.SRCCOPY)
     # print('類型:', type(save_bit_map))
     save_bit_map.SaveBitmapFile(save_dc, filename)
+
+# 这个函数主要用来计算时间
 def run_img_grab(name):
     # beg = time.time()
     # for i in range(10):
